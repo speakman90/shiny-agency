@@ -7,20 +7,23 @@ const CardLabel = styled.span`
     color: #5843e4;
     font-size: 22px;
     font-weight: bold;
+    margin: 10px;
 `
 const CardImage = styled.img`
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    margin: 10px;
 `
 
 const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 15px;
+    align-items: center;
     background-color: ${colors.backgroundLight};
     border-radius: 30px;
-    width: 350px;
+    width: 300px;
     transition: 200ms;
     &:hover {
         cursor: pointer;

@@ -18,19 +18,36 @@ const freelanceProfiles = [
         jobTitle: 'Développeuse Fullstack',
         picture: DefaultPicture,
     },
+    {
+        name: 'Jeanne Biche',
+        jobTitle: 'Développeuse Fullstack',
+        picture: DefaultPicture,
+    },
 ]
 
 const CardsContainer = styled.div`
     display: grid;
-    gap: 24px;
-    grid-template-rows: 350px 350px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: repeat(2,0fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+`
+const StyleTitle1 = styled.h1`
+    text-align: center;
+`
+
+const StyleTitle3 = styled.h1`
+    text-align: center;
+    color: grey;
 `
 
 function Freelances() {
     return (
         <div>
-            <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+            <StyleTitle1>Trouvez votre prestataire</StyleTitle1>
+            <StyleTitle3>Chez Shiny nous réunissons les meilleurs profils pour vous.</StyleTitle3>
             <CardsContainer>
                 {freelanceProfiles.map((profile, index) => (
                     <Card
